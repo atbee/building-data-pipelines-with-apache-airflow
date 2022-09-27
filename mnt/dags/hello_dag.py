@@ -13,7 +13,7 @@ with DAG(
     "hello_dag",
     default_args=default_args,
     schedule_interval=None,
-    start_date=timezone.datetime(2022, 9, 28),
+    start_date=timezone.datetime(2022, 9, 26),
     catchup=False,
 ) as dag:
     start = EmptyOperator(task_id="start")
